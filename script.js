@@ -230,6 +230,32 @@
         }
     }
 
+    /* ----- Lazy-load Facebook SDK when section visible ----- */
+    const fbContainer = $('.social-feed__embed');
+    if (fbContainer && 'IntersectionObserver' in window) {
+        const fbLocale = document.documentElement.lang.startsWith('pt') ? 'pt_BR'
+                       : document.documentElement.lang.startsWith('es') ? 'es_LA'
+                       : document.documentElement.lang.startsWith('fr') ? 'fr_FR'
+                       : document.documentElement.lang.startsWith('de') ? 'de_DE'
+                       : document.documentElement.lang.startsWith('it') ? 'it_IT'
+                       : 'en_US';
+        const fbIo = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (!e.isIntersecting) return;
+                fbIo.unobserve(e.target);
+                if (window.FB) return;
+                const root = document.createElement('div');
+                root.id = 'fb-root';
+                document.body.appendChild(root);
+                const s = document.createElement('script');
+                s.async = true; s.defer = true; s.crossOrigin = 'anonymous';
+                s.src = `https://connect.facebook.net/${fbLocale}/sdk.js#xfbml=1&version=v18.0`;
+                document.body.appendChild(s);
+            });
+        }, { rootMargin: '300px 0px' });
+        fbIo.observe(fbContainer);
+    }
+
     /* ----- YouTube facade (click to load iframe) ----- */
     $$('.experience__player').forEach(player => {
         const videoId = player.dataset.youtube;

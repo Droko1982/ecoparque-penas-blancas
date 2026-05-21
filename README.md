@@ -69,11 +69,24 @@ ecoparque-penas-blancas/
 └── README.md
 ```
 
-## Fotos y video
+## Fotos, video y feed social
 
-- **Imágenes:** [Unsplash](https://unsplash.com) (uso libre) como placeholder. **Reemplazar por fotos reales del parque** apenas el cliente las suministre.
+- **Fotos reales del parque** (carpeta `assets/photos/`, 11 imágenes en versión landscape + portrait, total ~3 MB optimizadas con Sharp).
+  - 10 fotos del Ecoparque tomadas del catálogo público del operador turístico **Rural Adventure** ([ruraladventure.co](https://www.ruraladventure.co/ecoparque-penas-blancas-calarca)) — hotlinkadas legalmente desde su CDN público y luego descargadas/optimizadas localmente. **Reemplazar por fotos del dueño** apenas las suministre.
+  - 1 foto cortesía de [viajaporcolombia.com](https://viajaporcolombia.com/sitios-turisticos/quindio/ecoparque-penas-blancas_4214/).
+  - Algunas fotos de la sección "Hospedaje" (cabaña/camping/restaurante) siguen siendo de Unsplash porque requieren temas específicos que las fotos genéricas del ecoparque no cubren.
+- **Feed de Facebook en vivo** (sección "Síguenos / Follow us / …"): widget oficial **Facebook Page Plugin** apuntando a `facebook.com/ecoparquepenasblancascolombia`. El SDK de Facebook se carga _lazy_ vía IntersectionObserver — solo cuando la sección entra al viewport, con locale por idioma (`es_LA`, `en_US`, `pt_BR`, `fr_FR`, `de_DE`, `it_IT`). Si el visitante no llega a esa sección, el SDK nunca se descarga. Si Facebook bloquea el widget, muestra un fallback con link directo a la página.
 - **Video de fondo del hero:** drone del Valle del Cocora (Quindío), por **Danilo Arenas** vía [Pexels](https://www.pexels.com/video/16263003/) — licencia gratuita. Archivo: `assets/hero-cocora-sd.mp4` (540p, ~7,6 MB). Pausa cuando está fuera de pantalla y respeta `prefers-reduced-motion`.
 - **Video embebido "Vive la experiencia":** YouTube ID `Ehikm4-QxTk` del canal Mosquera Music, cargado con _facade_ (click para reproducir) usando `youtube-nocookie.com` para no afectar el rendimiento inicial.
+
+### Cómo reemplazar las fotos por las del dueño
+
+1. Mete las fotos del dueño en `assets/photos/` con nombres `penas-NN.jpg` y `penas-NN-portrait.jpg` (versión recortada 640×800).
+2. Para generar la versión portrait desde una landscape:
+   ```bash
+   node -e "require('sharp')('assets/photos/penas-XX.jpg').resize(640,800,{fit:'cover',position:'attention'}).jpeg({quality:80,mozjpeg:true}).toFile('assets/photos/penas-XX-portrait.jpg')"
+   ```
+3. Si las fotos llegan en otro formato (HEIC, RAW, etc.) o sin optimizar, conviértelas con Sharp antes de subir.
 
 ## Despliegue
 
