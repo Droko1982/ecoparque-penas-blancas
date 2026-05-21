@@ -40,6 +40,29 @@
         });
     }
 
+    /* ----- Language dropdown ----- */
+    const langDropdowns = $$('.lang-dropdown');
+    langDropdowns.forEach(dd => {
+        const btn = dd.querySelector('.lang-dropdown__btn');
+        if (!btn) return;
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const open = dd.getAttribute('aria-expanded') === 'true';
+            langDropdowns.forEach(other => other.setAttribute('aria-expanded', 'false'));
+            dd.setAttribute('aria-expanded', open ? 'false' : 'true');
+        });
+    });
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.lang-dropdown')) {
+            langDropdowns.forEach(dd => dd.setAttribute('aria-expanded', 'false'));
+        }
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            langDropdowns.forEach(dd => dd.setAttribute('aria-expanded', 'false'));
+        }
+    });
+
     /* ----- Mobile menu ----- */
     const navToggle = $('#navToggle');
     const navMenu   = $('#navMenu');
@@ -88,7 +111,7 @@
     };
 
     /* ----- Reveal-on-scroll ----- */
-    const revealTargets = $$('.section__head, .section__text, .section__visual, .activity, .pricing__card, .schedule, .location, .cta, .step, .stay, .faq__item, .hero__content, .hero__visual, .fact, .legend__inner');
+    const revealTargets = $$('.section__head, .section__text, .section__visual, .activity, .pricing__card, .schedule, .location, .cta, .step, .stay, .faq__item, .hero__content, .hero__visual, .fact, .legend__inner, .travel-card');
     revealTargets.forEach(el => el.classList.add('reveal'));
     const counterTargets = $$('[data-counter]');
 

@@ -2,16 +2,23 @@
 
 Sitio web del **Ecoparque Peñas Blancas**, reserva natural y ecoparque de aventura en el Corregimiento de La Virginia, Calarcá, Quindío.
 
-**Demo:** https://droko1982.github.io/ecoparque-penas-blancas/
-**EN:** https://droko1982.github.io/ecoparque-penas-blancas/en/
+**Demo (6 idiomas):**
+- 🇪🇸 ES — https://droko1982.github.io/ecoparque-penas-blancas/
+- 🇺🇸 EN — https://droko1982.github.io/ecoparque-penas-blancas/en/
+- 🇧🇷 PT — https://droko1982.github.io/ecoparque-penas-blancas/pt/
+- 🇫🇷 FR — https://droko1982.github.io/ecoparque-penas-blancas/fr/
+- 🇩🇪 DE — https://droko1982.github.io/ecoparque-penas-blancas/de/
+- 🇮🇹 IT — https://droko1982.github.io/ecoparque-penas-blancas/it/
 
 ## ¿Qué incluye?
 
-- Página única (one-page) con secciones: hero, sobre, actividades, precios, hospedaje, leyenda del Cacique Calarcá, galería, cómo llegar, horarios, ubicación, FAQ y contacto.
-- **Bilingüe** ES (`/`) + EN (`/en/`) con `hreflang` y `JSON-LD` (`TouristAttraction` + `LocalBusiness` + `FAQPage`).
+- One-page con secciones: hero, "Plan tu visita desde…", sobre, actividades, precios, hospedaje, leyenda del Cacique Calarcá, galería, cómo llegar, horarios, ubicación, FAQ y contacto.
+- **6 idiomas** (ES default · EN · PT-BR · FR · DE · IT) con dropdown de idiomas en el nav, `hreflang` completo y `JSON-LD` (`TouristAttraction` + `LocalBusiness` + `FAQPage` + `TouristTrip` + `BreadcrumbList`).
 - **Dark/light** automático según el sistema, con toggle persistente en `localStorage`.
-- **SEO local** para el Quindío y el Eje Cafetero.
+- **SEO local + internacional** para el Quindío, Eje Cafetero y los principales mercados turísticos (US, BR, FR, DE, IT).
+- **OG image JPG** (1200×630) para previsualizaciones en redes sociales.
 - **Responsive** móvil-first con sticky bottom bar y CTA flotante de WhatsApp.
+- Coordenadas GPS reales de OpenStreetMap (4.4824, -75.6322).
 - Sin frameworks: HTML + CSS + JS vanilla.
 
 ## Información clave (resumen)
@@ -42,10 +49,14 @@ Escalada en roca (paredes hasta 280 m), rappel UIAA (80 m), espeleología (cueva
 
 ```
 ecoparque-penas-blancas/
-├── index.html          # Versión español (default)
-├── en/index.html       # Versión inglés
+├── index.html          # ES (default)
+├── en/index.html       # English
+├── pt/index.html       # Português (BR)
+├── fr/index.html       # Français
+├── de/index.html       # Deutsch
+├── it/index.html       # Italiano
 ├── styles.css          # Estilos compartidos
-├── script.js           # Tema, scroll reveals, status pill
+├── script.js           # Tema, scroll reveals, status pill, lang dropdown
 ├── 404.html
 ├── robots.txt
 ├── sitemap.xml
@@ -53,7 +64,8 @@ ecoparque-penas-blancas/
 ├── assets/
 │   ├── favicon.svg
 │   ├── logo.svg
-│   └── og-image.svg
+│   ├── og-image.svg
+│   └── og-image.jpg    # 1200x630 social preview
 └── README.md
 ```
 
