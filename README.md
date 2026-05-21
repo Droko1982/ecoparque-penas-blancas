@@ -69,9 +69,11 @@ ecoparque-penas-blancas/
 └── README.md
 ```
 
-## Fotos
+## Fotos y video
 
-Las imágenes son de [Unsplash](https://unsplash.com) (uso libre) como placeholder. **Reemplazar por fotos reales del parque** apenas el cliente las suministre — los `srcset` y `alt` ya están en su lugar.
+- **Imágenes:** [Unsplash](https://unsplash.com) (uso libre) como placeholder. **Reemplazar por fotos reales del parque** apenas el cliente las suministre.
+- **Video de fondo del hero:** drone del Valle del Cocora (Quindío), por **Danilo Arenas** vía [Pexels](https://www.pexels.com/video/16263003/) — licencia gratuita. Archivo: `assets/hero-cocora-sd.mp4` (540p, ~7,6 MB). Pausa cuando está fuera de pantalla y respeta `prefers-reduced-motion`.
+- **Video embebido "Vive la experiencia":** YouTube ID `Ehikm4-QxTk` del canal Mosquera Music, cargado con _facade_ (click para reproducir) usando `youtube-nocookie.com` para no afectar el rendimiento inicial.
 
 ## Despliegue
 

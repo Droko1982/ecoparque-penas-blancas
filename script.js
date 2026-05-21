@@ -209,6 +209,42 @@
     window.addEventListener('resize', scheduleScroll, { passive: true });
     onScroll();
 
+    /* ----- Hero background video ----- */
+    const heroVideo = $('.hero__video');
+    if (heroVideo && !reduceMotion) {
+        const onPlayable = () => {
+            heroVideo.classList.add('loaded');
+            heroVideo.play().catch(() => {}); // ignore autoplay-blocked errors
+        };
+        if (heroVideo.readyState >= 3) onPlayable();
+        else heroVideo.addEventListener('canplay', onPlayable, { once: true });
+        // Save bandwidth: pause when offscreen
+        if ('IntersectionObserver' in window) {
+            const heroIo = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) heroVideo.play().catch(() => {});
+                    else heroVideo.pause();
+                });
+            }, { threshold: 0.1 });
+            heroIo.observe(heroVideo);
+        }
+    }
+
+    /* ----- YouTube facade (click to load iframe) ----- */
+    $$('.experience__player').forEach(player => {
+        const videoId = player.dataset.youtube;
+        if (!videoId) return;
+        player.addEventListener('click', () => {
+            const iframe = document.createElement('iframe');
+            iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`;
+            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+            iframe.setAttribute('allowfullscreen', '');
+            iframe.setAttribute('title', player.getAttribute('aria-label') || 'Video');
+            player.innerHTML = '';
+            player.appendChild(iframe);
+        }, { once: true });
+    });
+
     /* ----- Open-now status -----
        Schedule: Wed–Mon 9AM–3PM, closed Tuesdays
        (per Rural Adventure tour info; ecoparque itself opens daily,
