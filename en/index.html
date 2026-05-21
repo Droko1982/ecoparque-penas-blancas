@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0B1612" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#FBFAF6" media="(prefers-color-scheme: light)">
+    <meta name="color-scheme" content="dark light">
+
+    <script>
+        (function(){
+            try {
+                var stored = localStorage.getItem('ecoparque-theme');
+                var system = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+                var theme = stored || system;
+                if (theme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+            } catch(e) {}
+        })();
+    </script>
+
+    <title>Ecoparque Peñas Blancas | Calarcá, Quindío · Rock Climbing, Caving & Hiking in Colombia's Coffee Region</title>
+    <meta name="description" content="Ecoparque Peñas Blancas — a natural reserve in Calarcá, Quindío. Rock climbing, UIAA-grade rappelling, caving, eco-trails, zip line and camping in Colombia's Coffee Cultural Landscape. More than 20,000 trees planted and the legend of Cacique Calarcá.">
+    <meta name="keywords" content="Ecoparque Peñas Blancas, Peñas Blancas Calarcá, ecopark Quindío, rock climbing Calarcá, rappel Quindío, caving Colombia, hiking Coffee Region, camping Quindío, La Virginia Calarcá, Cacique Calarcá legend, nature tourism Quindío, Coffee Cultural Landscape, things to do Calarcá, things to do Quindío, adventure Coffee Triangle, ecotourism Colombia, nature reserve Quindío, viewpoint Quindío, caves Calarcá, cabin lodging Quindío, zipline Calarcá">
+    <meta name="author" content="Ecoparque Peñas Blancas">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="geo.region" content="CO">
+    <meta name="geo.region.secondary" content="CO-QUI">
+    <meta name="geo.placename" content="Calarcá, Quindío, Colombia">
+    <meta name="geo.position" content="4.4837;-75.5871">
+    <meta name="ICBM" content="4.4837, -75.5871">
+    <link rel="canonical" href="https://droko1982.github.io/ecoparque-penas-blancas/en/">
+
+    <link rel="alternate" hreflang="es-CO" href="https://droko1982.github.io/ecoparque-penas-blancas/">
+    <link rel="alternate" hreflang="es" href="https://droko1982.github.io/ecoparque-penas-blancas/">
+    <link rel="alternate" hreflang="en" href="https://droko1982.github.io/ecoparque-penas-blancas/en/">
+    <link rel="alternate" hreflang="x-default" href="https://droko1982.github.io/ecoparque-penas-blancas/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="es_CO">
+    <meta property="og:url" content="https://droko1982.github.io/ecoparque-penas-blancas/en/">
+    <meta property="og:title" content="Ecoparque Peñas Blancas | Calarcá, Quindío · Adventure & Nature">
+    <meta property="og:description" content="Rock climbing, rappel, caving, hiking and camping in a natural reserve in Colombia's Coffee Region. 280-meter walls, caves of the Cacique Calarcá legend and views of the Andes.">
+    <meta property="og:image" content="https://droko1982.github.io/ecoparque-penas-blancas/assets/og-image.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Ecoparque Peñas Blancas">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ecoparque Peñas Blancas | Calarcá, Quindío">
+    <meta name="twitter:description" content="Natural reserve in the Coffee Region. Climbing, caving, camping and the legend of Cacique Calarcá.">
+    <meta name="twitter:image" content="https://droko1982.github.io/ecoparque-penas-blancas/assets/og-image.svg">
+
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="apple-touch-icon" href="../assets/favicon.svg">
+    <link rel="manifest" href="../site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google.com">
+    <link rel="dns-prefetch" href="https://www.instagram.com">
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@300;400;500;600;700;800&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="../styles.css">
+    <link rel="stylesheet" href="../styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["TouristAttraction", "LocalBusiness"],
+      "@id": "https://droko1982.github.io/ecoparque-penas-blancas/#organization",
+      "name": "Ecoparque Peñas Blancas",
+      "alternateName": ["Peñas Blancas Calarcá", "Peñas Blancas Quindío"],
+      "description": "Natural reserve and adventure ecopark in Calarcá, Quindío, Colombia. Rock climbing, UIAA-grade rappelling, caving, zip line, ecological trails, restaurant and camping in the Coffee Cultural Landscape.",
+      "inLanguage": ["en", "es"],
+      "url": "https://droko1982.github.io/ecoparque-penas-blancas/en/",
+      "image": "https://droko1982.github.io/ecoparque-penas-blancas/assets/og-image.svg",
+      "logo": "https://droko1982.github.io/ecoparque-penas-blancas/assets/logo.svg",
+      "telephone": ["+57 310 396 7951", "+57 300 658 7163"],
+      "email": "ecoparquepenasblancas@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "La Virginia",
+        "addressLocality": "Calarcá",
+        "addressRegion": "Quindío",
+        "addressCountry": "CO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 4.4837,
+        "longitude": -75.5871
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Wednesday","Thursday","Friday","Saturday","Sunday","Monday"],
+          "opens": "09:00",
+          "closes": "15:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/ecoparquepenasblancas/",
+        "https://www.facebook.com/ecoparquepenasblancascolombia/",
+        "http://www.ecoparquepenasblancas.com/"
+      ],
+      "priceRange": "$"
+    }
+    </script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+        <span>🌿 Ecoparque Peñas Blancas · Calarcá, Quindío</span><span>·</span>
+        <span>📞 +57 310 396 7951 · +57 300 658 7163</span><span>·</span>
+        <span>🏞️ Trail entry from COP $7,000</span><span>·</span>
+        <span>🧗 Climbing · Rappel · Caving · Zipline</span><span>·</span>
+        <span>⛺ Camping · Cabin · Restaurant</span><span>·</span>
+        <span>📅 Wed–Mon 9AM–3PM</span><span>·</span>
+        <span>📷 @ecoparquepenasblancas</span><span>·</span>
+        <span>🌿 Ecoparque Peñas Blancas · Calarcá, Quindío</span><span>·</span>
+    </div>
+</div>
+
+<header class="nav" id="nav" role="banner">
+    <div class="container nav__inner">
+        <a href="#inicio" class="nav__brand" aria-label="Ecoparque Peñas Blancas — Home">
+            <span class="nav__logo" aria-hidden="true">
+                <svg viewBox="0 0 64 64" width="40" height="40">
+                    <rect width="64" height="64" rx="14" fill="#0F2A1E"/>
+                    <circle cx="48" cy="20" r="6" fill="#FFD56A"/>
+                    <path d="M0 50 L18 22 L30 38 L42 18 L58 36 L64 30 L64 64 L0 64 Z" fill="#E8ECEF"/>
+                    <path d="M14 30 L18 22 L22 28 Z M38 26 L42 18 L46 26 Z" fill="#fff"/>
+                    <path d="M0 64 L0 48 Q14 44 28 50 T64 46 L64 64 Z" fill="#2D6A4F"/>
+                    <path d="M0 64 L0 56 Q18 52 36 58 T64 54 L64 64 Z" fill="#1B4332"/>
+                </svg>
+            </span>
+            <span class="nav__brandtext">
+                <strong>Ecoparque Peñas Blancas</strong>
+                <small>Calarcá · Quindío</small>
+            </span>
+        </a>
+
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav__menu" id="navMenu" aria-label="Main">
+            <a href="#sobre">The park</a>
+            <a href="#actividades">Activities</a>
+            <a href="#precios">Pricing</a>
+            <a href="#hospedaje">Stay</a>
+            <a href="#leyenda">Legend</a>
+            <a href="#visitanos">Visit us</a>
+            <div class="nav__tools">
+                <span class="status-pill status-pill--nav" data-status-pill data-state="closed" aria-live="polite">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    <span class="status-text">·</span>
+                </span>
+                <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" type="button">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                </button>
+                <a href="../" class="lang-btn" aria-label="Cambiar a español" hreflang="es">ES</a>
+                <a href="https://wa.me/573103967951" target="_blank" rel="noopener" class="nav__cta">Book</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+    <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+        <div class="hero__glow hero__glow--3"></div>
+    </div>
+
+    <div class="container hero__inner">
+        <div class="hero__content">
+            <span class="hero__eyebrow">
+                <span class="dot"></span>
+                Calarcá · Quindío · Coffee Cultural Landscape
+            </span>
+            <span class="status-pill" data-status-pill data-state="closed" role="status" aria-live="polite">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span class="status-text">·</span>
+            </span>
+            <h1 class="hero__title" id="hero-title">
+                Adventure on the <span class="text-gradient">sacred mountain</span> of Quindío.
+            </h1>
+            <p class="hero__subtitle">
+                <strong>Ecoparque Peñas Blancas</strong> is a natural reserve in Calarcá where rock, cloud forest and the legend of Cacique Calarcá meet. Rock climbing, rappelling, caving, hiking and camping at 2,430 m above sea level — right in the heart of Colombia's Coffee Region.
+            </p>
+            <div class="hero__cta">
+                <a href="https://wa.me/573103967951" target="_blank" rel="noopener" class="btn btn--primary">
+                    Book via WhatsApp
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+                <a href="#visitanos" class="btn btn--ghost">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    How to get here
+                </a>
+            </div>
+            <div class="hero__stats">
+                <div>
+                    <strong data-counter="280" data-suffix="m">0</strong>
+                    <span>Rock walls</span>
+                </div>
+                <div>
+                    <strong data-counter="20000" data-suffix="+">0</strong>
+                    <span>Trees planted</span>
+                </div>
+                <div>
+                    <strong data-counter="2430" data-suffix="m">0</strong>
+                    <span>Above sea level</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__visual">
+            <div class="hero__photo hero__photo--secondary" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80&auto=format&fit=crop"
+                     alt=""
+                     loading="eager"
+                     decoding="async"
+                     width="400" height="500">
+            </div>
+            <div class="hero__photo hero__photo--main">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900&q=85&auto=format&fit=crop"
+                     srcset="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500&q=80&auto=format&fit=crop 500w,
+                             https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900&q=85&auto=format&fit=crop 900w,
+                             https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1300&q=85&auto=format&fit=crop 1300w"
+                     sizes="(max-width: 720px) 90vw, 480px"
+                     alt="Green misty mountains of Colombia's Coffee Region"
+                     loading="eager"
+                     fetchpriority="high"
+                     decoding="async"
+                     width="900" height="1100">
+                <span class="hero__photo-tag">
+                    <span class="dot"></span>
+                    Central Andes
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <a href="#sobre" class="hero__scroll" aria-label="Scroll down">
+        <span></span>
+    </a>
+</section>
+
+<div class="highlight-banner">
+    🌿 More than <strong>20,000 trees</strong> planted to protect the mountain · Trail entry from <strong>COP $7,000</strong>
+</div>
+
+<section class="section" id="sobre" aria-labelledby="sobre-title">
+    <div class="container grid grid--2">
+        <div class="section__visual">
+            <div class="card-stack">
+                <div class="card-stack__item card-stack__item--1">
+                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=500&q=80&auto=format&fit=crop"
+                         alt="Cloud forest with tropical vegetation"
+                         loading="lazy" decoding="async"
+                         width="400" height="500">
+                    <div class="card-stack__caption">
+                        <p>Forest</p>
+                        <small>Cloud forest</small>
+                    </div>
+                </div>
+                <div class="card-stack__item card-stack__item--2">
+                    <img src="https://images.unsplash.com/photo-1517783999520-f068d7431a60?w=500&q=80&auto=format&fit=crop"
+                         alt="Climber on a natural rock wall"
+                         loading="lazy" decoding="async"
+                         width="400" height="500">
+                    <div class="card-stack__caption">
+                        <p>Rock</p>
+                        <small>280 m walls</small>
+                    </div>
+                </div>
+                <div class="card-stack__item card-stack__item--3">
+                    <img src="https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?w=500&q=80&auto=format&fit=crop"
+                         alt="Panoramic mountain view"
+                         loading="lazy" decoding="async"
+                         width="400" height="500">
+                    <div class="card-stack__caption">
+                        <p>Summit</p>
+                        <small>2,430 m a.s.l.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section__text">
+            <span class="section__eyebrow">The Ecopark</span>
+            <h2 class="section__title" id="sobre-title">
+                A reserve where the mountain <span class="text-gradient">is still cared for</span>
+            </h2>
+            <p class="section__lead">
+                In La Virginia village, above Calarcá, the <strong>white cliffs</strong> rise like a natural balcony over Quindío. The Ecopark protects this ancestral mountain — home to the legend of <strong>Cacique Calarcá</strong> and to the Quimbaya and Pijao cultures.
+            </p>
+            <p>
+                Here, adventure goes hand in hand with conservation: every visit supports a forest where we have already planted <strong>more than 20,000 trees</strong>.
+            </p>
+            <ul class="feature-list">
+                <li><span>✦</span> 3.2 km of ecological trails through native forest.</li>
+                <li><span>✦</span> Rock walls up to 280 m tall for climbing and rappelling.</li>
+                <li><span>✦</span> Caves linked to the legend of Cacique Calarcá's treasure.</li>
+                <li><span>✦</span> Safety gear under international UIAA standards.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section section--dark" id="actividades" aria-labelledby="actividades-title">
+    <div class="container">
+        <div class="section__head">
+            <span class="section__eyebrow">What to do</span>
+            <h2 class="section__title" id="actividades-title">Adventure for every level</h2>
+            <p class="section__lead">From a peaceful forest walk to a full day of climbing and rappelling on 80-meter walls.</p>
+        </div>
+        <div class="activities">
+            <article class="activity">
+                <div class="activity__icon" aria-hidden="true">🧗</div>
+                <h3>Rock climbing</h3>
+                <p>Natural rock walls up to <strong>280 meters</strong>, fully vertical. Routes for beginners and advanced climbers, with instructor and certified gear.</p>
+                <span class="activity__tag">Adventure · UIAA</span>
+            </article>
+            <article class="activity">
+                <div class="activity__icon" aria-hidden="true">🪂</div>
+                <h3>Rappel</h3>
+                <p>Descend walls of up to <strong>80 meters</strong> under international standards. A safe, controlled experience — no prior experience required.</p>
+                <span class="activity__tag">Adventure · UIAA</span>
+            </article>
+            <article class="activity">
+                <div class="activity__icon" aria-hidden="true">🔦</div>
+                <h3>Caving</h3>
+                <p>Explore deep caves following the steps of the <strong>Cacique Calarcá</strong> legend. An expedition into the wet, silent heart of the mountain.</p>
+                <span class="activity__tag">Adventure · Culture</span>
+            </article>
+            <article class="activity">
+                <div class="activity__icon" aria-hidden="true">🛤️</div>
+                <h3>Ecological trail</h3>
+                <p>A <strong>3.2 km</strong> route through native forest, viewpoints and reforested areas. Ideal for families, couples and birdwatchers.</p>
+                <span class="activity__tag">Nature</span>
+            </article>
+            <article class="activity">
+                <div class="activity__icon" aria-hidden="true">🦅</div>
+                <h3>Birdwatching</h3>
+                <p>The Quindío cloud forest hosts dozens of bird species. Bring your binoculars — toucans, hummingbirds and raptors await.</p>
+                <span class="activity__tag">Nature · Birding</span>
+            </article>
+            <article class="activity">
+                <div class="activity__icon" aria-hidden="true">🪢</div>
+                <h3>Zip line</h3>
+                <p>A <strong>40-meter mini zip line</strong> above the forest. Perfect for children and anyone wanting a taste of adrenaline without the height.</p>
+                <span class="activity__tag">Family</span>
+            </article>
+            <article class="activity">
+                <div class="activity__icon" aria-hidden="true">⚽</div>
+                <h3>Fields & games</h3>
+                <p>Soccer (8-a-side), volleyball, children's games and observation-sport tracks. Open-air spaces to enjoy with a group.</p>
+                <span class="activity__tag">Groups · Family</span>
+            </article>
+            <article class="activity">
+                <div class="activity__icon" aria-hidden="true">🌿</div>
+                <h3>Environmental education</h3>
+                <p>Workshops and guided tours for schools and groups: reforestation, Quindío wildlife and Quimbaya/Pijao culture.</p>
+                <span class="activity__tag">Schools · Groups</span>
+            </article>
+        </div>
+
+        <div class="facts">
+            <div class="fact"><strong>280<small style="font-size:18px;">m</small></strong><span>Tallest wall</span></div>
+            <div class="fact"><strong>80<small style="font-size:18px;">m</small></strong><span>UIAA rappel</span></div>
+            <div class="fact"><strong>3.2<small style="font-size:18px;">km</small></strong><span>Trail length</span></div>
+            <div class="fact"><strong>2,430<small style="font-size:18px;">m</small></strong><span>Elevation</span></div>
+            <div class="fact"><strong>12–20°</strong><span>Temperature</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="precios" aria-labelledby="precios-title">
+    <div class="container">
+        <div class="section__head">
+            <span class="section__eyebrow">Pricing</span>
+            <h2 class="section__title" id="precios-title">Affordable for everyone</h2>
+            <p class="section__lead">Trail entry is very affordable. Adventure activities and lodging are quoted per group — message us and we'll build your perfect plan.</p>
+        </div>
+
+        <div class="pricing">
+            <article class="pricing__card">
+                <header>
+                    <h3>Park entry</h3>
+                    <p class="pricing__sub">Ecological trail</p>
+                </header>
+                <div class="pricing__price">
+                    <span class="pricing__from">from</span>
+                    <strong>COP $7,000</strong>
+                    <small>per person · drink included</small>
+                </div>
+                <ul>
+                    <li>Access to the 3.2 km trail</li>
+                    <li>Viewpoints and forest areas</li>
+                    <li>Welcome drink</li>
+                    <li>Parking</li>
+                </ul>
+                <a href="https://wa.me/573103967951" target="_blank" rel="noopener" class="btn btn--ghost">Confirm visit</a>
+            </article>
+
+            <article class="pricing__card pricing__card--featured">
+                <span class="pricing__badge">Most popular</span>
+                <header>
+                    <h3>Adventure plan</h3>
+                    <p class="pricing__sub">Climbing · Rappel · Caving</p>
+                </header>
+                <div class="pricing__price">
+                    <span class="pricing__from">from</span>
+                    <strong>Ask us</strong>
+                    <small>based on group size</small>
+                </div>
+                <ul>
+                    <li>Certified guide and instructor</li>
+                    <li>UIAA safety gear included</li>
+                    <li>Combine multiple activities</li>
+                    <li>Group-friendly</li>
+                    <li>Beginner-friendly</li>
+                </ul>
+                <a href="https://wa.me/573103967951" target="_blank" rel="noopener" class="btn btn--primary">Get a quote</a>
+            </article>
+
+            <article class="pricing__card">
+                <header>
+                    <h3>Camping & cabin</h3>
+                    <p class="pricing__sub">Spend the night in the mountain</p>
+                </header>
+                <div class="pricing__price">
+                    <span class="pricing__from">from</span>
+                    <strong>Ask us</strong>
+                    <small>cabin sleeps up to 10</small>
+                </div>
+                <ul>
+                    <li>Furnished cabin</li>
+                    <li>Camping area with shared kitchen</li>
+                    <li>Bathrooms and showers</li>
+                    <li>Restaurant nearby</li>
+                </ul>
+                <a href="https://wa.me/573103967951" target="_blank" rel="noopener" class="btn btn--ghost">Reserve stay</a>
+            </article>
+        </div>
+
+        <p class="pricing__note">
+            💬 For current rates, message us on
+            <a href="https://wa.me/573103967951" target="_blank" rel="noopener">WhatsApp</a>
+            or call <strong>+57 310 396 7951</strong> · <strong>+57 300 658 7163</strong>.
+        </p>
+    </div>
+</section>
+
+<section class="section section--dark" id="hospedaje" aria-labelledby="hospedaje-title">
+    <div class="container">
+        <div class="section__head">
+            <span class="section__eyebrow">Stay</span>
+            <h2 class="section__title" id="hospedaje-title">
+                Sleep <span class="text-gradient">under the stars</span>
+            </h2>
+            <p class="section__lead">The mountain at night is something else. Wake up with the sound of birds and the smell of the wet forest.</p>
+        </div>
+
+        <div class="stay-grid">
+            <article class="stay">
+                <div class="stay__img">
+                    <img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?w=700&q=80&auto=format&fit=crop"
+                         alt="Wooden cabin in the forest"
+                         loading="lazy" decoding="async"
+                         width="700" height="440">
+                </div>
+                <div class="stay__body">
+                    <h3>Mountain cabin</h3>
+                    <p>A spacious, cozy cabin — perfect for groups, families or a quiet retreat. Sleeps up to 10 people.</p>
+                    <div class="stay__amenities">
+                        <span>Up to 10 people</span>
+                        <span>Kitchen</span>
+                        <span>Private bath</span>
+                        <span>Native forest</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="stay">
+                <div class="stay__img">
+                    <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=700&q=80&auto=format&fit=crop"
+                         alt="Camping tent in the forest at dusk"
+                         loading="lazy" decoding="async"
+                         width="700" height="440">
+                </div>
+                <div class="stay__body">
+                    <h3>Camping area</h3>
+                    <p>Wide space with platforms, drainage, shared kitchen and sanitary facilities. Privacy and silence deep in nature.</p>
+                    <div class="stay__amenities">
+                        <span>Shared kitchen</span>
+                        <span>Bathrooms & showers</span>
+                        <span>Drainage</span>
+                        <span>Campfire ok</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="stay">
+                <div class="stay__img">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80&auto=format&fit=crop"
+                         alt="Rustic restaurant table with a forest view"
+                         loading="lazy" decoding="async"
+                         width="700" height="440">
+                </div>
+                <div class="stay__body">
+                    <h3>Restaurant</h3>
+                    <p>Traditional Quindío cuisine with fresh local ingredients. Typical lunches, sugarcane juice and locally grown coffee.</p>
+                    <div class="stay__amenities">
+                        <span>Local food</span>
+                        <span>Vegetarian</span>
+                        <span>Local coffee</span>
+                        <span>By reservation</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="legend" id="leyenda" aria-labelledby="leyenda-title">
+    <div class="container">
+        <div class="legend__inner">
+            <span class="section__eyebrow">The legend</span>
+            <h2 class="section__title" id="leyenda-title">
+                The treasure of <span class="text-warm">Cacique Calarcá</span>
+            </h2>
+            <blockquote class="legend__quote">
+                "Before the Spanish conquerors arrived, the Cacique Calarcá hid his people's gold in the caves and white cliffs of the mountain. Whoever walks these rocks today walks through the history of the Pijao and Quimbaya peoples."
+            </blockquote>
+            <p class="legend__attr">— Oral tradition of Quindío</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="galeria" aria-labelledby="galeria-title">
+    <div class="container">
+        <div class="section__head">
+            <span class="section__eyebrow">Gallery</span>
+            <h2 class="section__title" id="galeria-title">
+                Postcards from the <span class="text-gradient">Ecopark</span>
+            </h2>
+            <p class="section__lead">
+                A small glimpse of the landscape waiting for you. For real photos from the park, follow us on
+                <a href="https://www.instagram.com/ecoparquepenasblancas/" target="_blank" rel="noopener" style="color:var(--green-400);font-weight:600;border-bottom:1px dotted var(--green-400);">@ecoparquepenasblancas</a>.
+            </p>
+        </div>
+
+        <div class="gallery">
+            <a href="https://www.instagram.com/ecoparquepenasblancas/" target="_blank" rel="noopener" class="gallery__item gallery__item--lg" aria-label="Mountain view · Instagram">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=900&q=80&auto=format&fit=crop"
+                     alt="Panoramic view of green mountains at sunrise"
+                     loading="lazy" decoding="async"
+                     width="900" height="1100">
+                <span class="gallery__overlay">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    @ecoparquepenasblancas
+                </span>
+            </a>
+
+            <a href="https://www.instagram.com/ecoparquepenasblancas/" target="_blank" rel="noopener" class="gallery__item" aria-label="Cloud forest · Instagram">
+                <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80&auto=format&fit=crop"
+                     alt="Cloud forest with mist among the trees"
+                     loading="lazy" decoding="async"
+                     width="600" height="600">
+                <span class="gallery__overlay">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    See more
+                </span>
+            </a>
+
+            <a href="https://www.instagram.com/ecoparquepenasblancas/" target="_blank" rel="noopener" class="gallery__item" aria-label="Natural cave · Instagram">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&q=80&auto=format&fit=crop"
+                     alt="Entrance to a natural cave with light at the end"
+                     loading="lazy" decoding="async"
+                     width="600" height="600">
+                <span class="gallery__overlay">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    See more
+                </span>
+            </a>
+
+            <a href="https://www.instagram.com/ecoparquepenasblancas/" target="_blank" rel="noopener" class="gallery__item gallery__item--wide" aria-label="Forest trail · Instagram">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1100&q=80&auto=format&fit=crop"
+                     alt="Trail between tall trees in a wet forest"
+                     loading="lazy" decoding="async"
+                     width="1100" height="600">
+                <span class="gallery__overlay">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    See more
+                </span>
+            </a>
+
+            <a href="https://www.instagram.com/ecoparquepenasblancas/" target="_blank" rel="noopener" class="gallery__item" aria-label="Rappel on rock · Instagram">
+                <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?w=600&q=80&auto=format&fit=crop"
+                     alt="Person rappelling down natural rock"
+                     loading="lazy" decoding="async"
+                     width="600" height="600">
+                <span class="gallery__overlay">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    See more
+                </span>
+            </a>
+
+            <a href="https://www.instagram.com/ecoparquepenasblancas/" target="_blank" rel="noopener" class="gallery__item" aria-label="Camping at sunrise · Instagram">
+                <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=80&auto=format&fit=crop"
+                     alt="Camping tents under starry sky"
+                     loading="lazy" decoding="async"
+                     width="600" height="600">
+                <span class="gallery__overlay">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    See more
+                </span>
+            </a>
+        </div>
+
+        <div class="gallery__cta">
+            <a href="https://www.instagram.com/ecoparquepenasblancas/" target="_blank" rel="noopener" class="btn btn--ghost">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                See more @ecoparquepenasblancas
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section section--dark" id="comollegar" aria-labelledby="comollegar-title">
+    <div class="container">
+        <div class="section__head">
+            <span class="section__eyebrow">Getting here</span>
+            <h2 class="section__title" id="comollegar-title">Up to the mountain in 4 steps</h2>
+            <p class="section__lead">The park sits in La Virginia, about 30–40 minutes from Calarcá town. It's a mountain road — go slow, you'll get there.</p>
+        </div>
+
+        <ol class="steps">
+            <li class="step">
+                <div class="step__num">1</div>
+                <div>
+                    <h3>Get to Calarcá</h3>
+                    <p>Calarcá is 10 minutes from Armenia. By bus, get off at the Calarcá terminal and head to the Plaza de Mercado (market square).</p>
+                </div>
+            </li>
+            <li class="step">
+                <div class="step__num">2</div>
+                <div>
+                    <h3>Take a Willys jeep to La Virginia</h3>
+                    <p>From the Calarcá Plaza de Mercado, take a Jeep Willys to the ecopark. An express ride to the parking area costs around <strong>COP $30,000</strong>.</p>
+                </div>
+            </li>
+            <li class="step">
+                <div class="step__num">3</div>
+                <div>
+                    <h3>Coordinate your visit</h3>
+                    <p>Before heading up, message us on WhatsApp to confirm guide, gear or lodging. Cell signal in the mountain is limited.</p>
+                </div>
+            </li>
+            <li class="step">
+                <div class="step__num">4</div>
+                <div>
+                    <h3>Pack what you need</h3>
+                    <p>Closed shoes, long pants, hydration, repellent, sunscreen and a light jacket. Temperatures range 12–20 °C (54–68 °F).</p>
+                </div>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<section class="section" id="visitanos" aria-labelledby="visitanos-title">
+    <div class="container grid grid--2">
+        <div class="section__text">
+            <span class="section__eyebrow">Visit us</span>
+            <h2 class="section__title" id="visitanos-title">When are we open?</h2>
+            <p class="section__lead">The park receives visitors Wednesday through Monday during daylight hours. We recommend arriving early to enjoy the best forest light.</p>
+            <p>For climbing, rappel and caving, please book in advance so we can coordinate guides and gear.</p>
+            <p style="margin-top:18px;color:var(--muted);font-size:14.5px;">💡 The best window for photos at the cliffs and quiet hikes is 9:00 AM – 11:30 AM.</p>
+        </div>
+        <div class="schedule">
+            <div class="schedule__item"><span class="schedule__day">Monday</span><span class="schedule__time">9:00 AM — 3:00 PM</span></div>
+            <div class="schedule__item schedule__item--closed"><span class="schedule__day">Tuesday</span><span class="schedule__time">Closed</span></div>
+            <div class="schedule__item"><span class="schedule__day">Wednesday</span><span class="schedule__time">9:00 AM — 3:00 PM</span></div>
+            <div class="schedule__item"><span class="schedule__day">Thursday</span><span class="schedule__time">9:00 AM — 3:00 PM</span></div>
+            <div class="schedule__item"><span class="schedule__day">Friday</span><span class="schedule__time">9:00 AM — 3:00 PM</span></div>
+            <div class="schedule__item schedule__item--highlight"><span class="schedule__day">Saturday</span><span class="schedule__time">9:00 AM — 3:00 PM</span></div>
+            <div class="schedule__item schedule__item--highlight"><span class="schedule__day">Sunday</span><span class="schedule__time">9:00 AM — 3:00 PM</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--dark" id="ubicacion" aria-labelledby="ubicacion-title">
+    <div class="container">
+        <div class="section__head">
+            <span class="section__eyebrow">Location</span>
+            <h2 class="section__title" id="ubicacion-title">
+                In <span class="text-gradient">La Virginia, Calarcá</span>
+            </h2>
+            <p class="section__lead">La Virginia village, 30–40 minutes from Calarcá's town center. Right in the heart of the Coffee Region, a short drive from Armenia, Salento and Filandia.</p>
+        </div>
+
+        <div class="location">
+            <div class="location__map">
+                <iframe
+                    src="https://www.google.com/maps?q=Ecoparque+Pe%C3%B1as+Blancas+Calarc%C3%A1+Quind%C3%ADo&output=embed"
+                    width="100%"
+                    height="500"
+                    style="border:0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Map of Ecoparque Peñas Blancas in Calarcá, Quindío"></iframe>
+            </div>
+            <div class="location__info">
+                <h3>📍 La Virginia village</h3>
+                <p>Calarcá, Quindío · Colombia. 2,430 m above sea level on the Central Andes, in the Coffee Cultural Landscape.</p>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Ecoparque+Pe%C3%B1as+Blancas+Calarc%C3%A1" target="_blank" rel="noopener" class="btn btn--primary">
+                    Open in Google Maps
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </a>
+
+                <div class="distances">
+                    <p class="distances__title">Approximate distances</p>
+                    <ul>
+                        <li><strong>Calarcá</strong><span>30–40 min</span></li>
+                        <li><strong>Armenia</strong><span>~50 min</span></li>
+                        <li><strong>Salento</strong><span>~1 h 20</span></li>
+                        <li><strong>Filandia</strong><span>~1 h 30</span></li>
+                        <li><strong>Pereira</strong><span>~1 h 40</span></li>
+                        <li><strong>Manizales</strong><span>~2 h 30</span></li>
+                    </ul>
+                </div>
+
+                <div class="cities">
+                    <p class="cities__title">Visitors from</p>
+                    <ul>
+                        <li>Armenia</li><li>Calarcá</li><li>Salento</li>
+                        <li>Filandia</li><li>Pereira</li><li>Manizales</li>
+                        <li>Bogotá</li><li>Medellín</li><li>Cali</li>
+                        <li>USA · EU · LATAM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+        <div class="section__head">
+            <span class="section__eyebrow">FAQ</span>
+            <h2 class="section__title" id="faq-title">Most asked questions</h2>
+            <p class="section__lead">Everything you need to know before heading up to the ecopark.</p>
+        </div>
+
+        <div class="faq">
+            <details class="faq__item">
+                <summary>How much does the entry cost?</summary>
+                <div class="faq__body">
+                    <p>Trail entry costs from <strong>COP $7,000 per person</strong> and includes a drink. Adventure activities (climbing, rappel, caving, zip line) and lodging are quoted separately on <a href="https://wa.me/573103967951" target="_blank" rel="noopener">WhatsApp</a>.</p>
+                </div>
+            </details>
+            <details class="faq__item">
+                <summary>Where exactly is the park?</summary>
+                <div class="faq__body">
+                    <p>In <strong>La Virginia village</strong>, Calarcá municipality, Quindío. It's about 30–40 minutes from Calarcá town on a mountain road.</p>
+                </div>
+            </details>
+            <details class="faq__item">
+                <summary>How do I get there without my own car?</summary>
+                <div class="faq__body">
+                    <p>Take a Jeep Willys at the <strong>Calarcá Plaza de Mercado</strong> to the ecopark. An express ride to the parking area costs around <strong>COP $30,000</strong>. We can also help arrange transport.</p>
+                </div>
+            </details>
+            <details class="faq__item">
+                <summary>Do I need experience to climb or rappel?</summary>
+                <div class="faq__body">
+                    <p>No. We work with instructors and all gear meets the international <strong>UIAA</strong> standard. We welcome beginners, families and groups. Some activities have health, weight or age limits — we confirm them with the guide.</p>
+                </div>
+            </details>
+            <details class="faq__item">
+                <summary>What should I bring?</summary>
+                <div class="faq__body">
+                    <p><strong>Closed shoes</strong> with good grip, long comfortable clothing, hydration, insect repellent, sunscreen, a change of clothes and a light jacket. Temperatures are 12–20 °C (54–68 °F). For camping, bring a tent and sleeping bag.</p>
+                </div>
+            </details>
+            <details class="faq__item">
+                <summary>Can I bring kids or pets?</summary>
+                <div class="faq__body">
+                    <p>Yes. Kids must come with a responsible adult; some activities require a civil registration. Pets are welcome with a leash and current vaccination record.</p>
+                </div>
+            </details>
+            <details class="faq__item">
+                <summary>Is there a restaurant and lodging?</summary>
+                <div class="faq__body">
+                    <p>Yes — a restaurant with Quindío cuisine (by reservation), a <strong>cabin sleeping up to 10</strong>, and a camping area with shared kitchen, bathrooms and showers.</p>
+                </div>
+            </details>
+            <details class="faq__item">
+                <summary>Are you open on Tuesdays?</summary>
+                <div class="faq__body">
+                    <p>For guided visits and adventure activities, regular hours are <strong>Wednesday to Monday, 9:00 AM to 3:00 PM</strong>. We always recommend confirming availability on WhatsApp before heading up.</p>
+                </div>
+            </details>
+            <details class="faq__item">
+                <summary>What are the environmental rules?</summary>
+                <div class="faq__body">
+                    <p>The ecopark is a reserve: <strong>no smoking, no alcohol or other substances, no weapons</strong>, and pack out all the trash you bring in. We've been planting forest for years — help us protect it.</p>
+                </div>
+            </details>
+            <details class="faq__item">
+                <summary>What's the Cacique Calarcá legend?</summary>
+                <div class="faq__body">
+                    <p>Quimbaya and Pijao tradition tells that <strong>Cacique Calarcá</strong> hid his people's treasure inside the caves and white cliffs of the mountain before the Spanish conquerors arrived. Walking the caves today is like stepping into that ancestral story.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<section class="section section--cta" id="contacto" aria-labelledby="cta-title">
+    <div class="container">
+        <div class="cta">
+            <span class="section__eyebrow">Book your visit</span>
+            <h2 id="cta-title">The mountain is waiting for you</h2>
+            <p>Message us on WhatsApp to book a visit, arrange adventure activities, lodging, or a tailored plan for your group.</p>
+            <div class="cta__actions">
+                <a href="https://wa.me/573103967951" target="_blank" rel="noopener" class="btn btn--warm btn--lg">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.3 1.2 4.7L2 22l5.5-1.2c1.3.7 2.9 1.1 4.5 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+                    Message us on WhatsApp
+                </a>
+                <a href="mailto:ecoparquepenasblancas@gmail.com" class="btn btn--ghost btn--lg">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    Send email
+                </a>
+                <a href="https://www.instagram.com/ecoparquepenasblancas/" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+        <div class="footer__col footer__col--brand">
+            <div class="footer__brand">
+                <span class="nav__logo">
+                    <svg viewBox="0 0 64 64" width="48" height="48">
+                        <rect width="64" height="64" rx="14" fill="#0F2A1E"/>
+                        <circle cx="48" cy="20" r="6" fill="#FFD56A"/>
+                        <path d="M0 50 L18 22 L30 38 L42 18 L58 36 L64 30 L64 64 L0 64 Z" fill="#E8ECEF"/>
+                        <path d="M14 30 L18 22 L22 28 Z M38 26 L42 18 L46 26 Z" fill="#fff"/>
+                        <path d="M0 64 L0 48 Q14 44 28 50 T64 46 L64 64 Z" fill="#2D6A4F"/>
+                        <path d="M0 64 L0 56 Q18 52 36 58 T64 54 L64 64 Z" fill="#1B4332"/>
+                    </svg>
+                </span>
+                <div>
+                    <strong>Ecoparque Peñas Blancas</strong>
+                    <p>Calarcá · Quindío · Colombia</p>
+                </div>
+            </div>
+            <p class="footer__about">Natural reserve and adventure ecopark in the heart of Colombia's Coffee Region. Climbing, rappel, caving, hiking and camping in the mountain.</p>
+        </div>
+
+        <div class="footer__col">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="#sobre">The Park</a></li>
+                <li><a href="#actividades">Activities</a></li>
+                <li><a href="#precios">Pricing</a></li>
+                <li><a href="#hospedaje">Stay</a></li>
+                <li><a href="#leyenda">Legend</a></li>
+                <li><a href="#galeria">Gallery</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__col">
+            <h4>Hours</h4>
+            <ul class="footer__schedule">
+                <li><span>Wed–Mon</span><span>9AM–3PM</span></li>
+                <li><span>Tuesday</span><span>Closed</span></li>
+            </ul>
+        </div>
+
+        <div class="footer__col">
+            <h4>Contact</h4>
+            <ul class="footer__contact">
+                <li>📍 La Virginia, Calarcá</li>
+                <li>📞 <a href="tel:+573103967951">+57 310 396 7951</a></li>
+                <li>📞 <a href="tel:+573006587163">+57 300 658 7163</a></li>
+                <li>✉️ <a href="mailto:ecoparquepenasblancas@gmail.com">ecoparquepenasblancas@gmail.com</a></li>
+            </ul>
+            <div class="footer__social">
+                <a href="https://www.instagram.com/ecoparquepenasblancas/" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="https://www.facebook.com/ecoparquepenasblancascolombia/" target="_blank" rel="noopener" aria-label="Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                </a>
+                <a href="https://wa.me/573103967951" target="_blank" rel="noopener" aria-label="WhatsApp">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.3 1.2 4.7L2 22l5.5-1.2c1.3.7 2.9 1.1 4.5 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <div class="container">
+            <p>© <span id="year"></span> Ecoparque Peñas Blancas · Calarcá, Quindío · All rights reserved.</p>
+            <p class="footer__credit">Natural reserve in the Coffee Cultural Landscape.</p>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/573103967951" target="_blank" rel="noopener" class="float-cta" aria-label="Message us on WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.3 1.2 4.7L2 22l5.5-1.2c1.3.7 2.9 1.1 4.5 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+    <span>WhatsApp</span>
+</a>
+
+<div class="bottom-bar" id="bottomBar" aria-hidden="true">
+    <a href="#actividades" class="bottom-bar__btn bottom-bar__btn--ghost">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 22 L7 12 L12 18 L17 8 L22 22 Z"/></svg>
+        Activities
+    </a>
+    <a href="https://wa.me/573103967951" target="_blank" rel="noopener" class="bottom-bar__btn bottom-bar__btn--primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.3 1.2 4.7L2 22l5.5-1.2c1.3.7 2.9 1.1 4.5 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+        Book
+    </a>
+</div>
+
+<script src="../script.js" defer></script>
+</body>
+</html>

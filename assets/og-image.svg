@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="og-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDBA74"/>
+      <stop offset="0.45" stop-color="#FCD34D"/>
+      <stop offset="1" stop-color="#A7D8F0"/>
+    </linearGradient>
+    <linearGradient id="og-cliff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#94A3B8"/>
+    </linearGradient>
+    <linearGradient id="og-shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0F2A1E" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0F2A1E" stop-opacity=".85"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#og-sky)"/>
+  <circle cx="950" cy="180" r="60" fill="#FFE08A" opacity=".95"/>
+  <path d="M0 380 L120 250 L250 360 L380 240 L520 360 L680 220 L820 360 L960 280 L1100 380 L1200 320 L1200 630 L0 630 Z" fill="url(#og-cliff)"/>
+  <path d="M110 290 L120 250 L138 304 Z M370 286 L380 240 L406 290 Z M670 268 L680 220 L706 268 Z" fill="#fff"/>
+  <path d="M0 630 L0 460 Q200 410 380 460 T780 440 T1200 460 L1200 630 Z" fill="#2D6A4F"/>
+  <path d="M0 630 L0 520 Q220 480 420 520 T820 510 T1200 520 L1200 630 Z" fill="#1B4332"/>
+  <rect x="0" y="380" width="1200" height="250" fill="url(#og-shade)"/>
+  <text x="80" y="490" font-family="'Fraunces','Playfair Display',Georgia,serif" font-size="86" font-weight="800" fill="#F4F6F2">Ecoparque</text>
+  <text x="80" y="568" font-family="'Fraunces','Playfair Display',Georgia,serif" font-size="86" font-weight="800" fill="#FFD56A">Peñas Blancas</text>
+  <text x="80" y="600" font-family="'Inter',sans-serif" font-size="20" letter-spacing="6" fill="#A7D8F0">CALARCÁ · QUINDÍO · COLOMBIA</text>
+</svg>

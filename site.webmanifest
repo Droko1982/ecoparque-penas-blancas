@@ -1,0 +1,19 @@
+{
+    "name": "Ecoparque Peñas Blancas",
+    "short_name": "Peñas Blancas",
+    "description": "Reserva natural y ecoparque de aventura en Calarcá, Quindío. Escalada, rappel, espeleología y senderismo en el Eje Cafetero.",
+    "lang": "es-CO",
+    "start_url": "/ecoparque-penas-blancas/",
+    "scope": "/ecoparque-penas-blancas/",
+    "display": "standalone",
+    "background_color": "#0B1612",
+    "theme_color": "#0F2A1E",
+    "icons": [
+        {
+            "src": "assets/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        }
+    ]
+}

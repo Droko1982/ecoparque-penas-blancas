@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://droko1982.github.io/ecoparque-penas-blancas/</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://droko1982.github.io/ecoparque-penas-blancas/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://droko1982.github.io/ecoparque-penas-blancas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://droko1982.github.io/ecoparque-penas-blancas/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://droko1982.github.io/ecoparque-penas-blancas/"/>
+  </url>
+  <url>
+    <loc>https://droko1982.github.io/ecoparque-penas-blancas/en/</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://droko1982.github.io/ecoparque-penas-blancas/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://droko1982.github.io/ecoparque-penas-blancas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://droko1982.github.io/ecoparque-penas-blancas/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://droko1982.github.io/ecoparque-penas-blancas/"/>
+  </url>
+  <url>
+    <loc>https://droko1982.github.io/ecoparque-penas-blancas/#actividades</loc>
+    <lastmod>2026-05-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://droko1982.github.io/ecoparque-penas-blancas/#precios</loc>
+    <lastmod>2026-05-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://droko1982.github.io/ecoparque-penas-blancas/#hospedaje</loc>
+    <lastmod>2026-05-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://droko1982.github.io/ecoparque-penas-blancas/#leyenda</loc>
+    <lastmod>2026-05-20</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://droko1982.github.io/ecoparque-penas-blancas/#galeria</loc>
+    <lastmod>2026-05-20</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://droko1982.github.io/ecoparque-penas-blancas/#ubicacion</loc>
+    <lastmod>2026-05-20</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://droko1982.github.io/ecoparque-penas-blancas/#faq</loc>
+    <lastmod>2026-05-20</lastmod>
+    <priority>0.6</priority>
+  </url>
+</urlset>
